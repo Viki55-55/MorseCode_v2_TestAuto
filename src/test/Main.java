@@ -10,8 +10,7 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
         String input_line = "";
-      //  input_line = input_line.toLowerCase(); // reading text and making it lowercase
-
+     
         while (!input_line.equals("stop")) {
             input_line = scan.nextLine();
             input_line = input_line.toLowerCase();
@@ -19,9 +18,7 @@ public class Main {
             Morse_translation read_lineMorse_translation = new Morse_translation();
             System.out.println("The translation is:");
             String translatedText = read_lineMorse_translation.Fix_Morse(input_line);
-            System.out.println(translatedText);
-            System.out.println("The translation:");
-
+            System.out.println(translatedText);    
         }
 
 
